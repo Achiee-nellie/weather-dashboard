@@ -262,7 +262,7 @@
 
         <div id="weatherContent">
             <div class="loading">
-                🌤️ Loading weather data for your location...
+                 Loading weather data for your location...
             </div>
         </div>
     </div>
@@ -462,7 +462,7 @@
             if (API_KEY === 'YOUR_API_KEY_HERE') {
                 content.innerHTML = `
                     <div class="error">
-                        ⚠️ Please add your OpenWeatherMap API key to use this feature.
+                         Please add your OpenWeatherMap API key to use this feature.
                         <br><br>
                         1. Get a free API key from <a href="https://openweathermap.org/api" target="_blank" style="color: #ffa500;">OpenWeatherMap</a>
                         <br>
@@ -472,7 +472,7 @@
                 return;
             }
             
-            content.innerHTML = '<div class="loading">🌤️ Fetching weather data...</div>';
+            content.innerHTML = '<div class="loading"> Fetching weather data...</div>';
             
             try {
                 const weatherData = await fetchWeatherData(city);
@@ -500,7 +500,7 @@
             if (API_KEY === 'YOUR_API_KEY_HERE') {
                 document.getElementById('weatherContent').innerHTML = `
                     <div class="error">
-                        ⚠️ Please add your OpenWeatherMap API key to use this weather dashboard.
+                         Please add your OpenWeatherMap API key to use this weather dashboard.
                         <br><br>
                         <strong>Setup Instructions:</strong>
                         <br>
@@ -605,7 +605,7 @@
 
         // API Usage Information
         console.log(`
-        🌤️ Weather Dashboard - OpenWeatherMap API Integration
+         Weather Dashboard - OpenWeatherMap API Integration
 
         To use this dashboard:
         1. Get a free API key from https://openweathermap.org/api
@@ -617,11 +617,11 @@
            - UV index data
         
         Features:
-        ✅ Real-time weather data
-        ✅ 7-day forecast
-        ✅ Geolocation support
-        ✅ Global city search
-        ✅ Responsive design
+         Real-time weather data
+         7-day forecast
+         Geolocation support
+         Global city search
+         Responsive design
         `);
     </script>
 </body>
